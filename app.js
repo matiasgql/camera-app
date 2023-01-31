@@ -11,7 +11,7 @@ function cameraStart() {
         .getUserMedia(
             {
             video: {
-              facingMode: "left",
+              facingMode: "right",
             },
           })
         .then(function(stream) {
