@@ -3,9 +3,7 @@ var constraints = { video: { facingMode: "user" }, audio: false };
 var track = null;
 
 // Define constants
-const cameraView = document.querySelector("#camera--view"),
-    cameraOutput = document.querySelector("#camera--output"),
-    cameraSensor = document.querySelector("#camera--sensor");
+const cameraView = document.querySelector("#camera--view");
 
 // Access the device camera and stream to cameraView
 function cameraStart() {
