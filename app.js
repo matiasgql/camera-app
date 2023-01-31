@@ -1,12 +1,5 @@
 // Set constraints for the video stream
-var constraints = { video: { facingMode: "user" }, audio: false };
-var track = null;
-
-// Define constants
-const cameraView = document.querySelector("#camera--view");  
-
-const constraints = 
-{ 
+var constraints = {
   video: {
     width: {
       min: 1280,
@@ -19,9 +12,14 @@ const constraints =
       max: 1440,
     },
     frameRate: 60,
-    facingMode: "user"
+    facingMode: "user" 
   },
+  audio: false 
 };
+var track = null;
+
+// Define constants
+const cameraView = document.querySelector("#camera--view");  
 
 // Access the device camera and stream to cameraView
 function cameraStart() {
@@ -32,8 +30,6 @@ function cameraStart() {
             cameraView.srcObject = stream;
         });
 };
-
-cameraView.requestFullscreen()
 
 // Start the video stream when the window loads
 window.addEventListener("load", cameraStart, false);
