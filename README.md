@@ -1,2 +1,1 @@
-# camera-app
-Super awesome camera web app built with HTML, CSS, and JS.
+Basic webcam web made it for watch my webcam on fullscreen.
